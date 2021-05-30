@@ -2,9 +2,20 @@
   text-align: center;
 }
 
+div {
+  background-image: url("fondo.png");
+}
+
+.fondo {
+  background-image: url("fond.png");
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.color {
+ color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,7 +33,24 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("fond.png");
 }
+.heading {
+  font-size: 6vw;
+  text-shadow: 2px 2px 0px #3F7FBF;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+  color: white;
+}
+.heading {
+  font-size: 6vw;
+  text-shadow: 2px 2px 0px #3F7FBF;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+}
+
+
+
 
 .App-link {
   color: #61dafb;

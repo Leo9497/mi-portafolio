@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import { Grid, makeStyles, Box, withWidth, Divider } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
+import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Portafolio from './components/Portafolio';
+import Contactame from './components/Contactame'
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+
+
+const useStyles = makeStyles({});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <NavBar />
+      
+
+      <div >
+      
+      </div>
+    </Router>
+  </>
   );
 }
 
 export default App;
+
+        
+        
+             
+            
+       
